@@ -1,0 +1,223 @@
+:root {
+    --bs-blue: #00a4e6;
+    --bs-blue-dark: #003357;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #011628;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bs-gray-dark);
+    color: var(--bs-light);
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width: 60%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 10px;
+}
+.header{
+    
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bs-gray-dark);
+    color: var(--bs-light);
+    letter-spacing: 0.1em;
+}
+.header button{
+   font-size: 0.8rem;
+   text-transform: uppercase;
+   letter-spacing: 0.3em;
+   background: var(--bs-gray-dark);
+   color: var(--bs-light);
+    border: none;
+    cursor: pointer;
+}
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bs-blue-dark);
+    color: var(--bs-light);
+    border-radius: 10px;
+}
+.row input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    color: var(--bs-light);
+    font-size: 0.8rem;
+   padding: 1rem 3rem;
+   outline: none;
+}
+.row input::placeholder{
+    color: var(--bs-light);
+    letter-spacing: 0.1em;
+}
+.row button{
+    position: absolute;
+    right: 0.5em;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15%;
+    height: 90%;
+    border: none;
+    border-radius: 10px;
+    background: var(--bs-blue);
+    color: var(--bs-light);
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+.row button:hover{
+   color: var(--bs-blue-dark);
+}
+.row i{
+   position: absolute;
+   left: 0.5em;
+    top: 50%;
+    transform: translateY(-50%);
+    color:var(--bs-blue);
+    font-size: 1.2rem;
+}
+.display{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--bs-blue-dark);
+    color: var(--bs-light);
+    font-size: 1.2rem;
+    letter-spacing: 0.1em;
+    margin-top: 5%;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+.wrapp{
+   
+    opacity: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bs-blue-dark);
+    color: var(--bs-light);
+    font-size: 1.2rem;
+    letter-spacing: 0.1em;
+    position: relative;
+}
+.wrapp img{
+    
+    width: 80px;
+    height:80px;
+    border-radius: 50%;
+}
+
+.wrapp span{
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+}
+.wrapp p{
+    color: var(--bs-blue);
+}
+.wrapp1{
+    opacity: 0;
+    background-color:var(--bs-gray-dark);
+    margin-top: 5%;
+    color: var(--bs-blue);
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+#rep,#fg,#fs{
+    color: var(--bs-light);
+    font-size: 1rem;
+}
+table{
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+   text-align: center; 
+}
+td{
+   
+}
+.wrapp1,.wrapp2,.wrapp3,.wrapp4{
+    width: 70%;
+    height: 100%;
+    margin-left: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    color: var(--bs-light);
+    padding: .5em;
+    font-size: 0.8rem;
+    
+}
+.wrapp2 span,.wrapp3 span{
+    width: 50%;
+    text-align: left;
+    padding: .5em;
+}
+.wrapp4{
+    
+    flex-direction: column;
+    
+    
+}
+.wrapp4{
+    color: var(--bs-blue);
+}
+.opacity{
+    opacity: 1;
+}
+@media screen and (max-width: 800px){
+    .container{
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+    }
+        
+    .display{
+       
+        height: 100%;
+    }
+    .wrapp1,.wrapp2,.wrapp3,.wrapp4{
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
+    }
+    .wrapp2,.wrapp3{
+        flex-direction: column;
+    }
+    
+}
+
+
+
+    
